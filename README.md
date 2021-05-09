@@ -7,7 +7,7 @@
 ## Import Database
 1. Migrate database from file bcg/database/migrations/schema.sql
 
-# Setting environment
+## Setting environment
 1. Open file .env at folder 
 ```hashkell
 DB_DRIVER=mysql
@@ -29,10 +29,11 @@ DB_DATABASE=bcg
 ```bash
 $ go build -o app
 ```
-4. run binaries using this command
+4. run binary using this command
 ```bash
 $ ./app
 ```
+5. note : this service default port will be 8090.
 
 ## Testing the service
 1. open postman
