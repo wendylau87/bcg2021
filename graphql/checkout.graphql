@@ -1,0 +1,4 @@
+type Checkout {
+  customer_name: String!
+  details: [CheckoutDetail]!
+}

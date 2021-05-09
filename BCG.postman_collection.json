@@ -1,0 +1,101 @@
+{
+	"info": {
+		"_postman_id": "88db6ba1-ca41-4c9d-a226-2e14a1a8f51d",
+		"name": "BCG",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "checkout - Free Raspberry",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"customer_name\":\"wendy\", \r\n    \"details\":[\r\n        {\r\n            \"sku\":\"234234\",\r\n            \"total_quantity\":1\r\n        },\r\n        {\r\n            \"sku\":\"43N23P\",\r\n            \"total_quantity\":1\r\n        }\r\n    ]\r\n}"
+				},
+				"url": {
+					"raw": "http://localhost:8090/checkout",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8090",
+					"path": [
+						"checkout"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "checkout - Buy 3 or more Disc 10% for Alexa",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"customer_name\":\"wendy\", \r\n    \"details\":[\r\n        {\r\n            \"sku\":\"A304SD\",\r\n            \"total_quantity\":3\r\n        }\r\n    ]\r\n}"
+				},
+				"url": {
+					"raw": "http://localhost:8090/checkout",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8090",
+					"path": [
+						"checkout"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "checkout - Buy 3 Pay 2 for Google Home",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"customer_name\":\"wendy\", \r\n    \"details\":[\r\n        {\r\n            \"sku\":\"120P90\",\r\n            \"total_quantity\":3\r\n        }\r\n    ]\r\n}"
+				},
+				"url": {
+					"raw": "http://localhost:8090/checkout",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8090",
+					"path": [
+						"checkout"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "checkout - Buy 3 Pay 2 for Google Home & Buy 3 Disc 10% Alexa & Free Raspberry",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"customer_name\":\"wendy\", \r\n    \"details\":[\r\n        {\r\n            \"sku\":\"120P90\",\r\n            \"total_quantity\":3\r\n        },\r\n        {\r\n            \"sku\":\"A304SD\",\r\n            \"total_quantity\":3\r\n        },\r\n        {\r\n            \"sku\":\"234234\",\r\n            \"total_quantity\":1\r\n        },\r\n        {\r\n            \"sku\":\"43N23P\",\r\n            \"total_quantity\":1\r\n        }\r\n    ]\r\n}"
+				},
+				"url": {
+					"raw": "http://localhost:8090/checkout",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8090",
+					"path": [
+						"checkout"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

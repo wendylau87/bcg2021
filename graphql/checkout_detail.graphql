@@ -1,0 +1,4 @@
+type CheckoutDetail {
+  sku: String!
+  total_quantity:Int!
+}
