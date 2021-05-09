@@ -5,4 +5,5 @@ launch.json
 !/app/log/.gitkeep
 .vscode/
 app
-.idea
+.idea/*
+.idea/
